@@ -1,0 +1,12 @@
+<library path="mujoco_ros_hardware">
+  <class
+    name="mujoco_ros_hardware/MujocoHardwareInterface"
+    type="mujoco_ros_hardware::MujocoHardwareInterface"
+    base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Unified MuJoCo hardware interface. Supports robot_type: franka, husky.
+      All instances share a single MujocoWorldSingleton (one physics world).
+      physics step (mj_step) is triggered once all plugin instances have written.
+    </description>
+  </class>
+</library>
